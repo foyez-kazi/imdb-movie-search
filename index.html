@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Oswald:300" rel="stylesheet" />
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>IMDB Movie Search</title>
+</head>
+
+<body>
+  <div class="outer-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+          <div class="main-view">
+            <header class="header">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-5">
+                  <a href="#" title="TMDB Movie Search">
+                    <img src="./img/tmdb-logo.svg" alt="logo" class="logo">
+                  </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-7">
+                  <div class="search-box">
+                    <input class="search-input" type="text" placeholder="Search Movie Title...">
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <!-- CARD SECTION -->
+            <section class="card-container">
+              <div class="row">
+                <div class="col-12 col-md-8 col-lg-7 order-md-last order-lg-last">
+                  <div class="meta-data-container">
+                    <h1 class="heading">INTERSTELLAR</h1>
+                    <span class="tagline">Mankind was born on Earth. It was never meant to die here.</span>
+                    <p class="overview">
+                      Interstellar chronicles the adventures of a group of explorers who make use of a newly discovered
+                      wormhole to surpass the limitations on human space travel and conquer the vast distances involved
+                      in
+                      an interstellar voyage.
+                    </p>
+                    <div class="additional-details">
+                      <span class="genre-list">Adventure, Drama, Science Fiction</span>
+                      <span class="production-list">
+                        Legendary Entertainment, Syncopy, Lynda Obst Productions
+                      </span>
+                      <div class="row release-details">
+                        <div class="col-6">
+                          Original Release:
+                          <span class="meta-data">2014-11-05</span>
+                        </div>
+                        <div class="col-6">
+                          Running Time:
+                          <span class="meta-data">169 mins</span>
+                        </div>
+                        <div class="col-6">
+                          Box Office:
+                          <span class="meta-data">$675,120,017</span>
+                        </div>
+                        <div class="col-6">
+                          Vote Average:
+                          <span class="meta-data">8.3/10</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-5 order-md-first order-lg-first">
+                  <img class="poster" src="./img/interstellar-poster.jpg" alt="interstellar poster">
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <footer class="footer">
+            <p>
+              <a href="https://github.com/foyez-kazi/imdb-movie-search" title="View Github Repo">
+                <i class="icon ion-social-github" aria-hidden="true"></i>View Code
+              </a>
+            </p>
+            <p>
+              Copyright &copy; <span id="year"></span>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // get the current year
+    $('#year').text(new Date().getFullYear())
+  </script>
+</body>
+
+</html>
